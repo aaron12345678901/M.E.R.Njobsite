@@ -1,0 +1,446 @@
+
+/* home */
+
+body, h1, h2, h3, p, input, button, form {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+.home-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+}
+
+/* Main heading styling */
+.main-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-heading h1, .main-heading h2 {
+  color: #294AF0;
+  margin: 0;
+  line-height: 1;
+}
+
+.main-heading h1 {
+  font-size: 3rem;
+}
+
+.main-heading h2 {
+  font-size: 1.8rem;
+  color: #4729F0;
+}
+
+/* Form container styling */
+.log-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.log-form h1 {
+  color: #16C5EF;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form input styling */
+.log-form input[type="email"],
+.log-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.log-form input[type="email"]:focus,
+.log-form input[type="password"]:focus {
+  border-color: #294AF0;
+  outline: none;
+}
+
+/* Submit button styling */
+.log-form button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #2989F0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.log-form button[type="submit"]:hover {
+  background-color: #16C5EF;
+}
+
+/* Toggle button styling */
+.log-form button {
+  background-color: #29F0D7;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.log-form button:hover {
+  background-color: #294AF0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .main-heading h1 {
+    font-size: 2.5rem;
+  }
+  .main-heading h2 {
+    font-size: 1.5rem;
+  }
+  .log-form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+/*  */
+
+
+
+/* welcome page */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, nav {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+/* Main container styling */
+div {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome heading */
+h1 {
+  color: #294AF0;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #29F0D7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #16C5EF;
+}
+
+/* Jobs list styling */
+h2 {
+  color: #294AF0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #2989F0;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #e8f7fa;
+  border-left: 4px solid #16C5EF;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  background-color: #dff5f9;
+}
+
+li h3 {
+  color: #4729F0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+li p {
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+li strong {
+  color: #294AF0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  div {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  li h3 {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* Add job */
+
+body, h1, p, input, button, textarea, form {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+.add-job-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+}
+
+/* Page heading styling */
+.add-job-container h1 {
+  color: #294AF0;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form container styling */
+form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Input and Textarea styling */
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #2989F0;
+  outline: none;
+}
+
+/* Submit button styling */
+form button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #16C5EF;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #294AF0;
+}
+
+/* Message styling for success or error */
+.message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4729F0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .add-job-container h1 {
+    font-size: 2rem;
+  }
+  form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+/* profile page  */
+
+body, h2, p, input, button, form, label {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Profile page container styling */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+}
+
+/* Page heading styling */
+.profile-container h2 {
+  color: #294AF0;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form container styling */
+form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Label and input styling */
+form label {
+  font-weight: bold;
+  color: #2989F0;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+form input[type="email"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="email"]:focus {
+  border-color: #16C5EF;
+  outline: none;
+}
+
+/* Submit button styling */
+form button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #16C5EF;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #294AF0;
+}
+
+/* Error and success message styling */
+.message {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.message.error {
+  color: red;
+}
+
+.message.success {
+  color: green;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .profile-container h2 {
+    font-size: 2rem;
+  }
+  form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
