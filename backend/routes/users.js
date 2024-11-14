@@ -2,7 +2,7 @@ const express = require('express');
 const User = require('../models/User');
 const router = express.Router();
 const authMiddleware = require('../middleware/authMiddleware'); // Corrected the import to use the correct middleware
-
+const authController = require('../controllers/authController');
 // GET profile route - fetch the user's profile using their email
 router.get('/profile', authMiddleware, async (req, res) => {
     try {
@@ -39,4 +39,19 @@ router.put('/profile', authMiddleware, async (req, res) => {
     }
 });
 
+// DELETE /profile route in users.js
+router.delete('/profile', authMiddleware, async (req, res) => {
+    console.log("DELETE /profile route hit");
+    try {
+        const userEmail = req.user.email;
+        const user = await User.findOneAndDelete({ email: userEmail });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        res.json({ message: 'Account deleted successfully' });
+    } catch (error) {
+        res.status(500).json({ error: 'Server error' });
+    }
+});
 module.exports = router;
+

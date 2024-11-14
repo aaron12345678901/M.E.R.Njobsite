@@ -76,3 +76,20 @@ exports.updateProfile = async (req, res) => {
         res.status(500).json({ error: 'Server error' });
     }
 };
+
+// Delete profile route
+exports.deleteProfile = async (req, res) => {
+    try {
+        const userEmail = req.user.email; // Assuming req.user is populated by auth middleware
+        const user = await User.findOneAndDelete({ email: userEmail });
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        res.json({ message: 'User deleted successfully' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Server error' });
+    }
+};
